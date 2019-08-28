@@ -1,0 +1,189 @@
+/* Dropdown Button */
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e1f0f7;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-size: 14px;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: rgb(245, 246, 247);
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+#intro {
+    background: url("../img/ssism.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.ssism {
+    font-size: 30px;
+}
+
+.top-nav-collapse {
+    background-color: #fff !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+    background: rgba(255, 255, 255, 0.7) !important;
+}
+
+@media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #3949ab !important;
+    }
+}
+
+#intro .h6 {
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+.hm-gradient .full-bg-img {
+    background: rgba(42, 27, 161, 0.9);
+    background: linear-gradient(135deg, rgba(160, 232, 175, 0.4), rgba(160, 232, 175, 0.3) 100%);
+}
+
+b {
+    color: black;
+}
+
+@media (max-width: 450px) {
+    .margins {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+}
+
+#pricing .lead {
+    opacity: 0.7;
+}
+
+.card {
+    height: 30rem;
+}
+
+#pricing .card-image {
+    background: url("../img/ssism.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.pricing-card {
+    height: 30rem;
+}
+
+.divider-line {
+    display: inline-block;
+    background: #fff;
+    width: 100px;
+    height: 1px;
+}
+
+.counter {
+    background: url("../../img/ssism.jpg") no-repeat center center;
+    text-align: center;
+}
+
+.employees,
+.customer,
+.design,
+.order {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.counter-count {
+    font-size: 35px;
+    /* background-color: #00b3e7;
+    border-radius: 50%; */
+    position: relative;
+    color: #da1d1d;
+    text-align: center;
+    line-height: 92px;
+    width: 92px;
+    height: 92px;
+    /* -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%; */
+    display: inline-block;
+    font-style: inherit
+}
+
+footer.page-footer .heading {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: justify;
+}
+
+footer.page-footer a:hover {
+    color: orangered;
+    text-shadow: 2px slategray;
+}
+
+footer.page-footer .footer-menu {
+    text-align: justify;
+}
+
+footer.page-footer .footer-contact {
+    text-align: justify;
+}
+
+footer.page-footer .footer-menu a::before {
+    content: ">";
+    margin-right: 4px;
+}
+
+footer.page-footer .footer-contact span {
+    font-weight: bolder;
+    margin-left: 2px;
+}

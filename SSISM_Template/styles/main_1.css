@@ -1,0 +1,46 @@
+.top-nav-collapse {
+    background-color: #3949ab !important;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+    color: black;
+}
+
+.navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+}
+
+@media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #3949ab !important;
+    }
+}
+
+footer.page-footer .heading {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: justify;
+}
+
+footer.page-footer a:hover {
+    color: orangered;
+    text-shadow: 2px slategray;
+}
+
+footer.page-footer .footer-menu {
+    text-align: justify;
+}
+
+footer.page-footer .footer-contact {
+    text-align: justify;
+}
+
+footer.page-footer .footer-menu a::before {
+    content: ">";
+    margin-right: 4px;
+}
+
+footer.page-footer .footer-contact span {
+    font-weight: bolder;
+    margin-left: 2px;
+}
