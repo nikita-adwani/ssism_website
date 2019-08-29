@@ -143,18 +143,18 @@ b {
 
 .counter-count {
     font-size: 35px;
-    /* background-color: #00b3e7;
-    border-radius: 50%; */
+    background-color: whitesmoke;
+    border-radius: 50%;
     position: relative;
     color: #da1d1d;
     text-align: center;
     line-height: 92px;
-    width: 92px;
-    height: 92px;
-    /* -webkit-border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
-    -o-border-radius: 50%; */
+    -o-border-radius: 50%;
     display: inline-block;
     font-style: inherit
 }
