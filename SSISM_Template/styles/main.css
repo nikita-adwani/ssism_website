@@ -1,3 +1,35 @@
+/* .mySlides {
+    width: 130%;
+} */
+
+.carousel-caption {
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+.carousel-caption h1 {
+    font-weight: bold;
+}
+
+.first-slide {
+    text-align: left;
+    margin-bottom: 150px;
+}
+
+.second-slide {
+    text-align: right;
+    margin-bottom: 150px;
+    text-align: justify;
+    margin-left: 530px;
+}
+
+.third-slide {
+    text-align: left;
+    margin-bottom: 180px;
+}
+
+
 /* Dropdown Button */
 
 .dropbtn {
@@ -61,7 +93,6 @@
 }
 
 #intro {
-    background: url("../img/ssism.jpg") no-repeat center center;
     background-size: cover;
 }
 
