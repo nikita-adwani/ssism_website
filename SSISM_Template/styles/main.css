@@ -2,7 +2,7 @@
 
 .dropbtn {
     background-color: #4CAF50;
-    color: white;
+    color: black;
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -51,6 +51,7 @@
 
 .dropdown:hover .dropdown-content {
     display: block;
+    color: black;
 }
 
 
@@ -79,7 +80,7 @@
 
 @media (max-width: 768px) {
     .navbar:not(.top-nav-collapse) {
-        background: #f7f7f7 !important;
+        background: WHITE !important;
     }
 }
 
@@ -186,4 +187,30 @@ footer.page-footer .footer-menu a::before {
 footer.page-footer .footer-contact span {
     font-weight: bolder;
     margin-left: 2px;
+}
+
+.navbar {
+    background: #0c73cc !important;
+}
+
+.dropdown {
+    border-radius: 0;
+    border: 0;
+}
+
+.dropdown-menu {
+    background: #e0e8f0;
+    border: 0;
+    top: 80%;
+    border-radius: 0px 0px 5px 5px;
+    color: black;
+}
+
+.dropdown-item:hover {
+    background: white;
+    color: black;
+}
+
+.navbar .nav-item .nav-link:hover .navbar .nav-item .nav-link {
+    color: red !important;
 }

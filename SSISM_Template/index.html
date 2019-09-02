@@ -23,12 +23,14 @@
                     <ul class="navbar-nav ml-auto">
 
                         <div class="dropdown">
-                            <li class="nav-item" class="dropbtn"><a class="nav-link active" href="#about">ABOUT US</a>
-                                <!-- <button class="dropbtn">Dropdown</button> -->
-                                <div class="dropdown-content">
-                                    <a href="./about_page.html">ABOUT US</a>
-                                    <a href="#">OUR ADVISOR & BOARD</a>
-                                    <a href="#">PARTNERS & SUPPORTERS</a>
+                            <li class="nav-item dropdown dmenu">
+                                <a class="nav-link dropdown" href="#" id="navbardrop" data-toggle="dropdown">
+                                ABOUT US
+                                </a>
+                                <div class="dropdown-menu sm-menu">
+                                    <a class="dropdown-item" href="#">ABOUT US</a>
+                                    <a class="dropdown-item" href="#">OUR ADVISORS & BOARD</a>
+                                    <a class="dropdown-item" href="#">PARTNERS & SUPPORTERS</a>
                                 </div>
                             </li>
                         </div>
@@ -36,33 +38,44 @@
 
                         <li class="nav-item"><a class="nav-link" href="#projects">PLACEMENTS & TRAININGS</a></li>
                         <div class="dropdown">
-                            <li class="nav-item" class="dropbtn"><a class="nav-link" href="#pricing">WHAT WE DO</a>
-                                <div class="dropdown-content">
-                                    <a href="#">VISISON & MISSION</a>
-                                    <a href="#">METHODOLOGY</a>
-                                    <a href="#">ACADEMICS</a>
-                                    <a href="#">STORIES OF EMPOWERMENT</a>
-                                    <a href="#">SINGAJI PREMIER LEAGUE</a>
-                                    <a href="#">COMPUTER EDUCATION</a>
+                            <li class="nav-item dropdown dmenu">
+                                <a class="nav-link dropdown" href="#" id="navbardrop" data-toggle="dropdown">
+                                   WHAT WE DO
+                                </a>
+                                <div class="dropdown-menu sm-menu">
+                                    <a class="dropdown-item" href="#">MISSION & VISION</a>
+                                    <a class="dropdown-item" href="#">METHODOLOGY</a>
+                                    <a class="dropdown-item" href="#">ACADEMICS</a>
+                                    <a class="dropdown-item" href="#">STORIES OF EMPOWERMENT</a>
+                                    <a class="dropdown-item" href="#">SINGAJI PREMIER LEAQUE</a>
+                                    <a class="dropdown-item" href="#">COMPUTER EDUCATION</a>
                                 </div>
+                            </li>
                             </li>
                         </div>
                         <div class="dropdown">
-                            <li class="nav-item" class="dropbtn"><a class="nav-link" href="#team">NEWS & MEDIA</a>
-                                <div class="dropdown-content">
-                                    <a href="#">PUBLISHED ARTICLES</a>
-                                    <a href="#">VEDIOS</a>
-                                    <a href="#">BLOGS</a>
-                                    <a href="#">NEWS LETTER(2018-19)</a>
-                                    <a href="#">INFO-GRAPHICS</a>
+                            <li class="nav-item dropdown dmenu">
+                                <a class="nav-link dropdown" href="#" id="navbardrop" data-toggle="dropdown">
+                                NEWS AND MEDIA
+                                </a>
+                                <div class="dropdown-menu sm-menu">
+                                    <a class="dropdown-item" href="#">PUBLISHED ARTICLES</a>
+                                    <a class="dropdown-item" href="#">VEDIOS</a>
+                                    <a class="dropdown-item" href="#">BLOGS</a>
+                                    <a class="dropdown-item" href="#">NEWS LETTER(2018-19)</a>
+                                    <a class="dropdown-item" href="#">INFO-GRAPHICS</a>
                                 </div>
+                            </li>
                             </li>
                         </div>
                         <div class="dropdown">
-                            <li class="nav-item" class="dropbtn"><a class="nav-link" href="#contact">GET INVOLVED</a>
-                                <div class="dropdown-content">
-                                    <a href="#">CAREER</a>
-                                    <a href="#">VOLUNTEER</a>
+                            <li class="nav-item dropdown dmenu">
+                                <a class="nav-link dropdown" href="#" id="navbardrop" data-toggle="dropdown">
+                            GET INVOLVED
+                            </a>
+                                <div class="dropdown-menu sm-menu">
+                                    <a class="dropdown-item" href="#">CAREER</a>
+                                    <a class="dropdown-item" href="#">VOLUNTEER</a>
                                 </div>
                             </li>
                         </div>
@@ -252,7 +265,7 @@
                 </div>
         </section>
 
-        <section id="contact" style="background-image:url('..img/ssism.jpg');">
+        <section id="contact" style="background-image:url('./img/ssism.jpg');">
             <div class="rgba-black-strong py-5">
                 <div class="container">
                     <div class="wow fadeIn">
@@ -439,6 +452,15 @@
                     step: function(now) {
                         $(this).text(Math.ceil(now));
                     }
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('.navbar-light .dmenu').hover(function() {
+                    $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+                }, function() {
+                    $(this).find('.sm-menu').first().stop(true, true).slideUp(105)
                 });
             });
         </script>
