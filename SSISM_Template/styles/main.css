@@ -238,8 +238,7 @@ footer.page-footer .footer-contact span {
 }
 
 .dropdown-item:hover {
-    background: white;
-    color: black;
+    color: #000 !important;
 }
 
 .navbar .nav-item .nav-link:hover .navbar .nav-item .nav-link {
