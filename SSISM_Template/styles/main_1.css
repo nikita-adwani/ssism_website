@@ -111,8 +111,14 @@ footer.page-footer .footer-contact span {
 }
 
 .card {
-    border-radius: 12px;
+    /* border-radius: 12px;
     margin-left: 2px;
-    padding-left: 2px;
-    height: 10cm;
+    padding-left: 2px; */
+    height: 23rem;
+}
+
+#contact {
+    background: url("../img/ssism.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
