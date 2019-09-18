@@ -15,6 +15,7 @@
 .first-slide {
     text-align: left;
     margin-bottom: 150px;
+    background-image: inherit;
 }
 
 .second-slide {
