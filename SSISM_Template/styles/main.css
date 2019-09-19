@@ -245,3 +245,10 @@ footer.page-footer .footer-contact span {
 .navbar .nav-item .nav-link:hover .navbar .nav-item .nav-link {
     color: red !important;
 }
+
+#contact {
+    background-image: url('../img/ssism.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%
+}
