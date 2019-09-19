@@ -12,23 +12,16 @@
     font-weight: bold;
 }
 
-.first-slide {
+.top-left {
+    position: absolute;
+    top: 45%;
+    right: 10%;
     text-align: left;
-    margin-bottom: 150px;
-    background-image: inherit;
-}
-
-.second-slide {
-    text-align: right;
-    margin-bottom: 150px;
-    text-align: justify;
-    margin-left: 530px;
-}
-
-.third-slide {
-    text-align: left;
-    margin-bottom: 180px;
-}
+    left: 15%;
+  }
+  .view img{
+      width: 100vw;
+  }
 
 
 /* Dropdown Button */
