@@ -6327,8 +6327,8 @@ button:focus {
       font-size: 17px; }
 
 .dropdown .dropdown-menu .dropdown-item:hover, .dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:focus {
-  color: #1d1e1f;
-  background-color: #f7f7f9; }
+  color: #000000;
+  background-color: #ffffff; }
 
 .navbar {
   font-weight: 300;
