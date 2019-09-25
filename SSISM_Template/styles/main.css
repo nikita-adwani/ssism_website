@@ -18,10 +18,11 @@
     right: 10%;
     text-align: left;
     left: 15%;
-  }
-  .view img{
-      width: 100vw;
-  }
+}
+
+.view img {
+    width: 100vw;
+}
 
 
 /* Dropdown Button */
@@ -122,7 +123,8 @@
 b {
     color: black;
 }
-.h3-responsive{
+
+.h3-responsive {
     font-size: 100%;
 }
 
@@ -234,3 +236,17 @@ footer.page-footer .footer-contact span {
     color: black;
 }
 
+.dropdown-item:hover {
+    color: #000 !important;
+}
+
+.navbar .nav-item .nav-link:hover .navbar .nav-item .nav-link {
+    color: red !important;
+}
+
+#contact {
+    background-image: url('../img/ssism.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%
+}
