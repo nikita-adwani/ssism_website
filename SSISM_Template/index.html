@@ -16,73 +16,63 @@
 <body id="top">
     <header>
         <!-- Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top scrolling-navbar" id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top scrolling-navbar" id="main_navbar">
             <div class="container"><a class="navbar-brand" href="#"><strong class ="ssism">SSISM</strong></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarContent">
-                    <ul class="navbar-nav ml-auto">
-
-                        <div class="dropdown">
-                            <li class="nav-item dropdown dmenu">
-                                <a class="nav-link dropdown" href="#" id="navbardrop" data-toggle="dropdown">
-                                ABOUT US
-                                </a>
-                                <div class="dropdown-menu sm-menu">
-                                    <a class="dropdown-item" href="./about_page.html">ABOUT US</a>
-                                    <a class="dropdown-item" href="#">OUR ADVISORS & BOARD</a>
-                                    <a class="dropdown-item" href="#">PARTNERS & SUPPORTERS</a>
-                                </div>
-                            </li>
-                        </div>
-
-
-                        <li class="nav-item"><a class="nav-link" href="#projects">PLACEMENTS & TRAININGS</a></li>
-                        <div class="dropdown">
-                            <li class="nav-item dropdown dmenu">
-                                <a class="nav-link dropdown" href="#" id="navbardrop" data-toggle="dropdown">
-                                   WHAT WE DO
-                                </a>
-                                <div class="dropdown-menu sm-menu">
-                                    <a class="dropdown-item" href="#">MISSION & VISION</a>
-                                    <a class="dropdown-item" href="#">METHODOLOGY</a>
-                                    <a class="dropdown-item" href="#">ACADEMICS</a>
-                                    <a class="dropdown-item" href="#">STORIES OF EMPOWERMENT</a>
-                                    <a class="dropdown-item" href="#">SINGAJI PREMIER LEAQUE</a>
-                                    <a class="dropdown-item" href="#">COMPUTER EDUCATION</a>
-                                </div>
-                            </li>
-                            </li>
-                        </div>
-                        <div class="dropdown">
-                            <li class="nav-item dropdown dmenu">
-                                <a class="nav-link dropdown" href="#" id="navbardrop" data-toggle="dropdown">
-                                NEWS AND MEDIA
-                                </a>
-                                <div class="dropdown-menu sm-menu">
-                                    <a class="dropdown-item" href="#">PUBLISHED ARTICLES</a>
-                                    <a class="dropdown-item" href="#">VEDIOS</a>
-                                    <a class="dropdown-item" href="#">BLOGS</a>
-                                    <a class="dropdown-item" href="#">NEWS LETTER(2018-19)</a>
-                                    <a class="dropdown-item" href="#">INFO-GRAPHICS</a>
-                                </div>
-                            </li>
-                            </li>
-                        </div>
-                        <div class="dropdown">
-                            <li class="nav-item dropdown dmenu">
-                                <a class="nav-link dropdown" href="#" id="navbardrop" data-toggle="dropdown">
-                            GET INVOLVED
-                            </a>
-                                <div class="dropdown-menu sm-menu">
-                                    <a class="dropdown-item" href="#">CAREER</a>
-                                    <a class="dropdown-item" href="#">VOLUNTEER</a>
-                                </div>
-                            </li>
-                        </div>
-                    </ul><a class="btn btn-primary btn-rounded my-0" href="https://templateflip.com/templates/material-landing" target="_blank">CONTRIBUTE</a>
-                </div>
-            </div>
-        </nav>
+            
+      <div class='nav-fostrap ml-auto'>
+        <ul>
+          
+          <li><a href='javascript:void(0)'>About Us</a>
+            <ul class='dropdown'>
+              <li><a href=''>ABOUT US</a></li>
+              <li><a href=''>OUR ADVISORS & BOARD</a></li>
+              <li><a href=''>PARTNERS AND SUPPOTERS</a></li>
+            </ul>
+          </li>
+          <li><a href=''>Placements and Tranings</a></li>
+          <li><a href='javascript:void(0)' >What We Do</a>
+            <ul class='dropdown'>
+              <li><a href=''>MISSION & VISION</a></li>
+              <li><a href=''>METHODOLOGY</a></li>
+              <li><a href=''>ACADEMICS</a></li>
+              <li><a href=''>STORIES OF EMPOWERMENT</a></li>
+              <li><a href=''>SINGAJI PREMIER LEAQUE</a></li>
+              <li><a href=''>COMPUTER EDUCATION</a></li>
+            </ul>
+          </li>
+          <li><a href='javascript:void(0)' >News And Media</a>
+            <ul class='dropdown'>
+              <li><a href=''>PUBLISHED ARTICLES</a></li>
+              <li><a href=''>VIDEOS</a></li>
+              <li><a href=''>BLOGS</a></li>
+              <li><a href=''>NEWS LETTER(2018-19)</a></li>
+              <li><a href=''>INFO-GRAFICS</a></li>
+            </ul>
+          </li>
+          <li><a href='javascript:void(0)'>GET INVOLVED</a>
+            <ul class='dropdown'>
+              <li><a href=''>CAREER</a></li>
+              <li><a href=''>VOLUNTEER</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+      <div class='nav-bg-fostrap'>
+        <div class='navbar-fostrap'> <span></span> <span></span> <span></span> </div>
+        <a href='' class='title-mobile'>SSISM</a>
+      </div>
+      </div>
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    </nav>
         <Intro Section>
             <!-- Intro Section -->
             <section class="view hm-gradient" id="intro">
@@ -150,7 +140,7 @@
     </header>
     <div id="content">
 
-        <section class="text-center py-5 indigo darken-1 text-white" id="pricing">
+        <section class="text-center py-5 indigo darken-1 text-black" id="pricing">
             <div class="container">
                 <div class="wow fadeIn">
                     <h2 class="h1 pt-5 pb-0">IN THE NEWS</h2>
@@ -448,24 +438,14 @@
                 });
             });
         </script>
-        <!-- <script>
-            var myIndex = 0;
-            carousel();
-
-            function carousel() {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                myIndex++;
-                if (myIndex > x.length) {
-                    myIndex = 1 
-                }
-                x[myIndex - 1].style.display = "block";
-                setTimeout(carousel, 3000); // Change image every 2 seconds
-            }
-        </script> -->
+      <script>
+        $(document).ready(function(){
+          $('.navbar-fostrap').click(function(){
+           $('.nav-fostrap').toggleClass('visible');
+           $('body').toggleClass('cover-bg');
+          });
+         });
+        </script> 
 </body>
 
 </html>
