@@ -83,6 +83,7 @@ footer.page-footer .footer-contact span {
     background-size: cover;
     background-attachment: fixed;
 }
+
 .dropbtn {
     background-color: #4CAF50;
     color: black;
@@ -150,6 +151,7 @@ footer.page-footer .footer-contact span {
 
 .ssism {
     font-size: 30px;
+    color: #000;
 }
 
 .top-nav-collapse {

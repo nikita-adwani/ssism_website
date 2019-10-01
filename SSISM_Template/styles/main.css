@@ -106,7 +106,7 @@
 
 @media (max-width: 768px) {
     .navbar:not(.top-nav-collapse) {
-        background: WHITE !important;
+        background: rgba(255, 255, 255, 0.7) !important;
     }
 }
 
@@ -154,7 +154,8 @@ b {
 
 .divider-line {
     display: inline-block;
-    background: #fff;
+    background: black;
+    ;
     width: 100px;
     height: 1px;
 }
@@ -174,7 +175,7 @@ b {
 
 .counter-count {
     font-size: 35px;
-    background-color: whitesmoke;
+    background-color: rgb(224, 222, 222);
     border-radius: 50%;
     position: relative;
     color: #da1d1d;
@@ -220,7 +221,7 @@ footer.page-footer .footer-contact span {
 }
 
 .navbar {
-    background: #0c73cc !important;
+    background: #fff !important;
 }
 
 .dropdown {
