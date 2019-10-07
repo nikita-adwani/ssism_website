@@ -553,7 +553,7 @@ nav {
 
 @media only screen and (max-width:1199px) {
     .container {
-        width: 96%;
+        width: 103%;
     }
 }
 
@@ -562,4 +562,9 @@ nav {
     top: 0;
     right: 0;
     left: 0;
+}
+@media(max-width:900px){
+    .logo{
+        margin-top:-450px;
+    }
 }
