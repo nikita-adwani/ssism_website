@@ -102,21 +102,6 @@
     font-size: 30px;
 }
 
-
-/* .top-nav-collapse {
-    background-color: #fff !important;
-}
-
-.navbar:not(.top-nav-collapse) {
-    background: rgba(255, 255, 255, 0.7) !important;
-}
-
-@media (max-width: 768px) {
-    .navbar:not(.top-nav-collapse) {
-        background: rgba(255, 255, 255, 0.7) !important;
-    }
-} */
-
 #intro .h6 {
     font-weight: 300;
     line-height: 1.7;
@@ -161,10 +146,9 @@ b {
 
 .divider-line {
     display: inline-block;
-    <<<<<<< HEAD background: black;
-    ;
-    =======background: #000;
-    >>>>>>>1450d011171eb631994fcd0d4c2a7a844a42471f width: 100px;
+    background: black;
+    background: #000;
+    width: 100px;
     height: 1px;
 }
 
@@ -227,35 +211,6 @@ footer.page-footer .footer-contact span {
     font-weight: bolder;
     margin-left: 2px;
 }
-
-.navbar {
-    background: #fff !important;
-}
-
-
-/* .navbar {
-    background: #0c73cc !important;
-} */
-
-
-/* .dropdown {
-    border-radius: 0;
-    border: 0;
-} */
-
-
-/* .dropdown-menu {
-    background: #e0e8f0;
-    border: 0;
-    top: 80%;
-    border-radius: 0px 0px 5px 5px;
-    color: black;
-} */
-
-
-/* .dropdown-item:hover {
-    color: #000 !important;
-} */
 
 .navbar .nav-item .nav-link:hover .navbar .nav-item .nav-link {
     color: red !important;
@@ -407,7 +362,7 @@ nav {
 @media only screen and (max-width:900px) {
     .nav-fostrap {
         background: #fff;
-        width: 240px;
+        width: 280px;
         height: 100%;
         display: block;
         position: fixed;

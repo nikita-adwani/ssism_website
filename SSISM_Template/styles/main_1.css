@@ -28,7 +28,8 @@
     font-size: 30px;
 }
 
-.top-nav-collapse {
+
+/* .top-nav-collapse {
     background-color: #fff !important;
 }
 
@@ -40,7 +41,7 @@
     .navbar:not(.top-nav-collapse) {
         background: #3949ab !important;
     }
-}
+} */
 
 footer.page-footer .heading {
     font-weight: bold;
@@ -158,12 +159,15 @@ footer.page-footer .footer-contact span {
     background-color: #fff !important;
 }
 
-.navbar:not(.top-nav-collapse) {
+
+/* .navbar:not(.top-nav-collapse) {
     background: rgba(255, 255, 255, 0.7) !important;
 }
 
 @media (max-width: 768px) {
     .navbar:not(.top-nav-collapse) {
         background: WHITE !important;
-    }
-}
+    } */
+
+
+/* } */
