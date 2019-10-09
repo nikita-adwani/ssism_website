@@ -85,65 +85,295 @@ footer.page-footer .footer-contact span {
     background-attachment: fixed;
 }
 
-.dropbtn {
-    background-color: #4CAF50;
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
+nav {
+    z-index: 100;
+}
 
-/* The container <div> - needed to position the dropdown content */
+.nav-fostrap .scroll {
+    background-color: white;
+}
 
-.dropdown {
-    position: relative;
+.nav-fostrap {
+    display: block;
+    margin-bottom: 15px 0;
+}
+
+.nav-fostrap ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.nav-fostrap li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: inline-block;
+    position: relative;
+    font-size: 14;
+    color: #def1f0;
 }
 
 
-/* Dropdown Content (Hidden by Default) */
+/* navbar text css */
 
-.dropdown-content {
-    display: none;
+.nav-fostrap li a {
+    padding: 15px 20px;
+    font-size: 14;
+    color: #000;
+    display: inline-block;
+    outline: 0;
+    font-weight: 400;
+}
+
+
+/* navbar dropdown list hover */
+
+.nav-fostrap li:hover ul.dropdown {
+    display: block;
+}
+
+.nav-fostrap li ul.dropdown {
     position: absolute;
-    background-color: #e1f0f7;
-    min-width: 250px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    font-size: 14px;
+    display: none;
+    width: 250px;
+    background-color: white;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    -ms-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    padding-top: 0;
 }
 
 
-/* Links inside the dropdown */
+/* navbar dropdown hover for list */
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+.nav-fostrap li ul.dropdown li {
     display: block;
+    list-style-type: none;
 }
 
 
-/* Change color of dropdown links on hover */
+/* navbar dropdown hover for link tag */
 
-.dropdown-content a:hover {
-    background-color: rgb(245, 246, 247);
-}
-
-
-/* Show the dropdown menu on hover */
-
-.dropdown:hover .dropdown-content {
+.nav-fostrap li ul.dropdown li a {
+    padding: 15px 20px;
+    font-size: 15px;
     display: block;
-    color: black;
+    font-weight: 400;
 }
 
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
+/* navbar dropdown hover in full size */
 
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+.nav-fostrap li ul.dropdown li:last-child a {
+    border-bottom: none;
+}
+
+.nav-fostrap li:hover a {
+    background: whitesmoke;
+    color: #000 !important;
+}
+
+.nav-fostrap li:first-child:hover a {
+    border-radius: 3px 0 0 3px;
+}
+
+.nav-fostrap li ul.dropdown li:hover a {
+    background: white;
+}
+
+.nav-fostrap li ul.dropdown li:first-child:hover a {
+    border-radius: 0;
+}
+
+.nav-fostrap li:hover .arrow-down {
+    border-top: 5px solid #fff;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #def1f0;
+    position: relative;
+    top: 15px;
+    right: -5px;
+    content: '';
+}
+
+.title-mobile {
+    display: none;
+}
+
+
+/* sidebar navbar css */
+
+@media only screen and (max-width:900px) {
+    .nav-fostrap {
+        background: #fff;
+        width: 240px;
+        height: 100%;
+        display: block;
+        position: fixed;
+        left: -240px;
+        top: 0px;
+        -webkit-transition: left 0.25s ease;
+        -moz-transition: left 0.25s ease;
+        -ms-transition: left 0.25s ease;
+        -o-transition: left 0.25s ease;
+        transition: left 0.25s ease;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 100%;
+    }
+    /* fostrap responsive css */
+    .title-mobile {
+        position: fixed;
+        display: block;
+        top: 10px;
+        font-size: 20px;
+        left: 100px;
+        right: 100px;
+        text-align: center;
+        color: #000;
+        font-weight: bold;
+    }
+    .nav-fostrap.visible {
+        left: 0px;
+        -webkit-transition: left 0.25s ease;
+        -moz-transition: left 0.25s ease;
+        -ms-transition: left 0.25s ease;
+        -o-transition: left 0.25s ease;
+        transition: left 0.25s ease;
+    }
+    /* navbar dropdown list hover */
+    .nav-fostrap li:hover ul.dropdown {
+        display: block;
+    }
+    .nav-fostrap li ul.dropdown {
+        position: absolute;
+        display: none;
+        width: 250px;
+        background-color: white;
+        -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+        -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+        -ms-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+        -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+        padding-top: 0;
+    }
+    /* responsive navbar css(sidenav) fostrap(bg) */
+    .nav-bg-fostrap {
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        height: 50px;
+        margin: 0;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background: white;
+        padding: 12px 0 0 10px;
+        -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+        -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+        -ms-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+        -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    }
+    .navbar-fostrap {
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 12px;
+    }
+    /* sidebar toggle button css */
+    .navbar-fostrap span {
+        height: 2px;
+        background: #000;
+        margin: 5px;
+        display: block;
+    }
+    /* responsive sidebar text color  */
+    .navbar-fostrap span:nth-child(2) {
+        width: 20px;
+    }
+    .navbar-fostrap span:nth-child(3) {
+        width: 20px;
+    }
+    .nav-fostrap ul {
+        padding-top: 50px;
+    }
+    .nav-fostrap li {
+        display: block;
+    }
+    .nav-fostrap li a {
+        display: block;
+        color: #000;
+        font-weight: 600;
+    }
+    /* responsive side bar dropdown */
+    .nav-fostrap li:first-child:hover a {
+        border-radius: 0;
+    }
+    .nav-fostrap li ul.dropdown {
+        position: relative;
+    }
+    .nav-fostrap li ul.dropdown li a {
+        background: rgb(218, 218, 218) !important;
+        border-bottom: none;
+        color: black !important;
+    }
+    /* sidenav text */
+    .nav-fostrap li:hover a {
+        background: rgb(218, 218, 218);
+        color: #000 !important;
+    }
+    /* sidenav dropdown hover */
+    .nav-fostrap li ul.dropdown li:hover a {
+        background-color: #fff !important;
+        color: #000 !important;
+    }
+    .cover-bg {
+        background: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width:1199px) {
+    .container {
+        width: 103%;
+    }
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 #intro {
@@ -167,7 +397,16 @@ footer.page-footer .footer-contact span {
 @media (max-width: 768px) {
     .navbar:not(.top-nav-collapse) {
         background: WHITE !important;
-    } */
+    }
+}
 
-
-/* } */
+@media(max-width: 900px){
+    .navbar-brand{
+        margin-bottom: -450px;
+    }
+}
+@media(max-width:900px){
+    .logo{
+        margin-top:-450px;
+    }
+}

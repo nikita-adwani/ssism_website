@@ -14,7 +14,62 @@
 </head>
 
 <body id="top">
+    <header>
+        <!-- Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top scrolling-navbar" id="main_navbar">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="img/logo.png" class="logo"></a>
 
+                <div class='nav-fostrap ml-auto'>
+                    <ul>
+
+                        <li><a href='javascript:void(0)'>About Us</a>
+                            <ul class='dropdown'>
+                                <li><a href='./about_page.html'>ABOUT US</a></li>
+                                <li><a href=''>OUR ADVISORS & BOARD</a></li>
+                                <li><a href=''>PARTNERS AND SUPPOTERS</a></li>
+                            </ul>
+                        </li>
+                        <li><a href=''>Placements and Tranings</a></li>
+                        <li><a href='javascript:void(0)'>What We Do</a>
+                            <ul class='dropdown'>
+                                <li><a href=''>MISSION & VISION</a></li>
+                                <li><a href=''>METHODOLOGY</a></li>
+                                <li><a href=''>ACADEMICS</a></li>
+                                <li><a href=''>STORIES OF EMPOWERMENT</a></li>
+                                <li><a href=''>SINGAJI PREMIER LEAQUE</a></li>
+                                <li><a href=''>COMPUTER EDUCATION</a></li>
+                            </ul>
+                        </li>
+                        <li><a href='javascript:void(0)'>News And Media</a>
+                            <ul class='dropdown'>
+                                <li><a href=''>PUBLISHED ARTICLES</a></li>
+                                <li><a href=''>VIDEOS</a></li>
+                                <li><a href=''>BLOGS</a></li>
+                                <li><a href=''>NEWS LETTER(2018-19)</a></li>
+                                <li><a href=''>INFO-GRAFICS</a></li>
+                            </ul>
+                        </li>
+                        <li><a href='javascript:void(0)'>GET INVOLVED</a>
+                            <ul class='dropdown'>
+                                <li><a href=''>CAREER</a></li>
+                                <li><a href=''>VOLUNTEER</a></li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+                <div class='nav-bg-fostrap'>
+                    <div class='navbar-fostrap'> <span></span> <span></span> <span></span> </div>
+                    <a href='' class='title-mobile'>SSISM</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
     <section class="text-center py-5 grey lighten-4" id="about">
         <div class="container">
             <div class="wow fadeIn">
@@ -149,13 +204,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="mb-5 flex-center"><a class="px-3"><i class="fa fa-facebook fa-lg white-text"></i></a><a class="px-3"><i class="fa fa-twitter fa-lg white-text"></i></a><a class="px-3"><i class="fa fa-google-plus fa-lg white-text"></i></a><a class="px-3"><i class="fa fa-linkedin fa-lg white-text"></i></a></div>
+                    <div class="mb-5 flex-center"><a class="px-3"><i class="fa fa-facebook fa-lg white-text"></i></a><a class="px-3"><i class="fa fa-twitter fa-lg white-text"></i></a><a class="px-3"><i
+                                class="fa fa-google-plus fa-lg white-text"></i></a><a class="px-3"><i
+                                class="fa fa-linkedin fa-lg white-text"></i></a></div>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-xl-3 col-md-6">
                     <div class=" mt-5 footer-heading">
                         <p class="heading">LINK </p>
                         <ul class="footer-menu">
@@ -172,7 +229,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-xl-3 col-md-6">
                     <div class=" mt-5 footer-heading">
                         <p class="heading">CERTIFICATE</p>
                         <ul class="footer-menu">
@@ -189,7 +246,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-xl-3 col-md-6">
                     <div class=" mt-5 footer-heading">
                         <p class="heading">OTHER LINK</p>
                         <ul class="footer-menu">
@@ -206,7 +263,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-xl-3 col-md-6">
                     <div class=" mt-5 footer-heading">
                         <p class="heading">FIND US</p>
                         <ul class="footer-contact">
@@ -235,17 +292,17 @@
                     <ul class="footer-contact">
                         <li>
                             <i class="fa fa-home"></i>
-                            <span>Address:</span> NH 59-A,Gram-Sandalpur, Tehsil Khategaon, District Dewas, MP, India, Pin Code – 455336
+                            <span>Address:</span> NH 59-A,Sandalpur,Khategaon, Dewas, MP, India, 455336
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="footer-copyright">
-            <div class="container-fluid">
-                <p>&copy; <a href="/">Material Landing</a> - Design: <a href="https://templateflip.com/" target="_blank">TemplateFlip</a></p>
-            </div>
-        </div>
+        <!-- <div class="footer-copyright">
+                <div class="container-fluid">
+                    <p>&copy; <a href="/">Material Landing</a> - Design: <a href="https://templateflip.com/" target="_blank">TemplateFlip</a></p>
+                </div>
+            </div> -->
     </footer>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
@@ -253,6 +310,14 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <script>
         new WOW().init();
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.navbar-fostrap').click(function() {
+                $('.nav-fostrap').toggleClass('visible');
+                $('body').toggleClass('cover-bg');
+            });
+        });
     </script>
 
 </body>
